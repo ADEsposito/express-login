@@ -1,0 +1,29 @@
+// make a variable
+@indigo: indigo;
+@green: rgba(1, 200, 100, 0.5);
+@thistle: thistle;
+@blue: mediumslateblue;
+
+// can use regular css syntax and use your variables
+body {
+  background-color: @thistle;
+}
+
+#login {
+  margin-top: 10%;
+  margin-left: 30%;
+  display: inline-block;
+  text-align: center;
+
+  // can nest selectors when using less
+  form {
+    width: 100%;
+    background-color: @blue;
+    color: @thistle;
+  }
+
+  button {
+    background-color: @blue;
+    color: @thistle;
+  }
+}
